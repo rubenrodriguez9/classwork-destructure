@@ -27,9 +27,9 @@ let  [, , three, four, ...rest] = arr;
 
 console.log(three, four, rest);
 
-let temp = three;
-three = four;
-four = temp
-// [three, four] = [four, three];
+// let temp = three;
+// three = four;
+// four = temp
+[three, four] = [four, three];
 
 console.log(three, four)
